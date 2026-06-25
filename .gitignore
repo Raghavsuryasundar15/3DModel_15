@@ -1,0 +1,11 @@
+Dependencies
+node_modules/
+
+Production outputs
+dist/
+build/
+
+ Local env files and system logs
+.env*.local
+*.log
+.DS_Store
