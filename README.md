@@ -4,19 +4,19 @@ A high-performance, interactive 3D product configurator built with **React**, **
 
 ## Features
 
-- 🎯 **Local file upload** — drag-and-drop or click-to-browse `.glb` files, no server required
-- 🧠 **Memory-safe pipeline** — blob URLs are created and revoked correctly, no leaks
-- 🕹️ **On-canvas gizmo** — draggable move/rotate/scale handles directly on the uploaded model, synced live with the slider panel (Drei's `<TransformControls>`)
-- ⌨️ **Keyboard shortcuts** — W / E / R switch the gizmo between Move / Rotate / Scale, matching common DCC-tool conventions
-- 🎨 **Live material editing** — color presets, custom color picker, metalness/roughness sliders, wireframe toggle
-- 📐 **Full transform controls** — Position X/Y/Z, Rotation X/Y/Z (degrees), Scale X/Y/Z with uniform-lock
-- 💾 **JSON transform history** — every uploaded model's position/rotation/scale/material is logged and can be exported to a standalone `.json` file, then re-imported later to restore state
-- 💡 **Realistic lighting** — HDR environment map (`city` preset), soft contact shadows, three-point lighting rig
-- 🖱️ **Bounded orbit camera** — can't clip inside the model, can't zoom out to infinity, and auto-disables while the gizmo is being dragged
-- ⏳ **Loading feedback** — live percentage while the GLTF binary is parsed
-- ⚪ **Flat white / black UI** — no gradients, glow, or dark panels
+  **Local file upload** — drag-and-drop or click-to-browse `.glb` files, no server required
+   **Memory-safe pipeline** — blob URLs are created and revoked correctly, no leaks
+ **On-canvas gizmo** — draggable move/rotate/scale handles directly on the uploaded model, synced live with the slider panel (Drei's `<TransformControls>`)
+  **Keyboard shortcuts** — W / E / R switch the gizmo between Move / Rotate / Scale, matching common DCC-tool conventions
+ **Live material editing** — color presets, custom color picker, metalness/roughness sliders, wireframe toggle
+ **Full transform controls** — Position X/Y/Z, Rotation X/Y/Z (degrees), Scale X/Y/Z with uniform-lock
+  **JSON transform history** — every uploaded model's position/rotation/scale/material is logged and can be exported to a standalone `.json` file, then re-imported later to restore state
+ **Realistic lighting** — HDR environment map (`city` preset), soft contact shadows, three-point lighting rig
+ **Bounded orbit camera** — can't clip inside the model, can't zoom out to infinity, and auto-disables while the gizmo is being dragged
+ **Loading feedback** — live percentage while the GLTF binary is parsed
+ **Flat white / black UI** — no gradients, glow, or dark panels
 
-## Project structure
+Project structure
 
 ```
 3d-configurator/
@@ -65,12 +65,6 @@ npm run dev
 # 3. Open the printed local URL (usually http://localhost:5173)
 ```
 
-## Build for production
-
-```bash
-npm run build
-npm run preview   # serve the production build locally
-```
 
 ## How the local-file-to-WebGL pipeline works
 
